@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>ZuoQue - Register</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="media\logos\logo-128px.png">
+<link href="libs\lobibox\css\lobibox.min-0b9dce6fbc37d008016bd60a22113ca1.css" rel="stylesheet" type="text/css">
+<link href="libs\ladda\ladda-themeless.min-d9995bad1beb3d9abbe899320749196b.css" rel="stylesheet" type="text/css">
+<link href="libs\sweetalert2\sweetalert2.min-fbf274a0f38afdc2e4f4e634b58c409b.css" rel="stylesheet" type="text/css">
+<link href="css\bootstrap.min-bb8074e07134924c08c96ef6a4836e8f.css" rel="stylesheet" type="text/css">
+<link href="css\icons.min-8f317f4669a5b032ce749712f3ab9955.css" rel="stylesheet" type="text/css">
+<link href="css\app.min-ec96e91ef39281bc7823f2e7fdc329bd.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        	img.captcha-img {
+        		height: 37.4px;
+        		cursor:pointer;
+        	}
+        </style>
+</head>
+<body class="authentication-bg authentication-bg-pattern">
+<div class="account-pages mt-5 mb-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8 col-lg-6 col-xl-5">
+<div class="card bg-pattern">
+<div class="card-body p-4">
+<div class="text-center w-75 m-auto">
+<a href="index.htm">
+<span><img src="media\logos\logo-128px.png" alt="" height="80"></span>
+</a>
+<p class="text-muted mb-4 mt-3">Don&#39;t have an account? Create your account, it only takes a minute.</p>
+</div>
+<form id="register-form" action="/register" method="post"><input type="hidden" name="_csrf" value="284a63cf-ab41-4775-a432-128a265e2e83">
+<div class="form-group">
+<label for="username">Email or Mobile(+86)</label>
+<input class="form-control" type="text" id="username" name="username" placeholder="Enter your email or mobile(+86)" autofocus="" required="" pattern="(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(^1\d{10}$)" data-msg-pattern="请输入正确的邮箱地址或者手机号码">
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input class="form-control" type="password" id="password" name="password" placeholder="Enter your password" required="">
+</div>
+<div class="form-group">
+<label for="repassword">Confirm Password</label>
+<input class="form-control" type="password" id="repassword" name="repassword" placeholder="Enter your password again" required="">
+</div>
+<div class="form-group">
+<label for="captcha">Captcha</label>
+<div class="row">
+<div class="col">
+<input class="form-control" type="text" id="captcha" name="captcha" placeholder="Enter captcha" required="">
+</div>
+<div class="col-auto">
+<img id="captcha-img" class="captcha-img" alt="Captcha" src="api\system\captcha.gif">
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="checkbox-signup" name="tos" required="" checked="checked">
+<label class="custom-control-label" for="checkbox-signup">I accept <a href="tos.html" target="_blank" class="text-dark">Terms of Service</a></label>
+</div>
+</div>
+<div class="form-group mb-0 text-center">
+<button id="register-btn" class="btn btn-success btn-block" type="submit" data-style="zoom-out">Register</button>
+</div>
+</form>
+</div> 
+</div>
+<div class="row mt-3">
+<div class="col-12 text-center">
+<p class="text-white-50">Already have account? <a href="login.html" class="text-white ml-1"><b>Login</b></a></p>
+</div> 
+</div>
+</div> 
+</div>
+</div>
+</div>
+<footer class="footer footer-alt">
+<ul class="list-inline">
+<li class="list-inline-item"><a href="register-1.html?locale=en_US" class="text-white">English</a></li>
+<li class="list-inline-item"><a href="register-2.html?locale=zh_CN" class="text-white">中文</a></li>
+</ul>
+2019 - 2020 &copy; <a href="index.htm" class="text-white-50">ZuoQue</a>
+</footer>
+<script type="text/javascript">
+        var contextPath = '';
+        var captchaAccountId = '2040821743';
+        var captchaCodeId = '2021799751';
+        </script>
+<script src="js\vendor.min-0182b452de42d23f7b80836465e466f3.js"></script>
+<script src="libs\lobibox\js\notifications.min-37380344fb1ad93edb53b97b637a012b.js"></script>
+<script src="libs\ladda\spin-85e7520783a0b693cc23e39039711900.js"></script>
+<script src="libs\ladda\ladda-2cdeb1c554d511c230473227a62c7276.js"></script>
+<script src="libs\sweetalert2\sweetalert2.min-252818b9b6b54a9934cecbb84516abc7.js"></script>
+<script src="libs\jquery-validate\jquery.validate.min-23d73c6bd6cbea8f06d0cc227896a827.js"></script>
+<script src="libs\jquery-validate\additional-methods.min-c57b650d4c92903fc34ced345247f493.js"></script>
+<script src="i18n\messages_en_US.js?1582167958630"></script>
+<script src="js\common-b31406374da12d3923aec04dd1e4fc27.js"></script>
+<script src="js\pages\register-b99b9d53b951748dde2df7c0cf928b3f.js"></script>
+<script>
+        	RegisterControls.init();
+        </script>
+<script src="js\app.min-fb87990e98d3768fdb1ce41dc6c03c05.js"></script>
+</body>
+</html>

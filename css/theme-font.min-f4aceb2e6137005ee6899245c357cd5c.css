@@ -1,0 +1,38 @@
+﻿/*------------- #THEME FONT --------------*/
+/* quicksand-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Quicksand Light"), local("Quicksand-Light"), url("../fonts/quicksand-v9-latin-ext_latin-300-29d6463fff8795add35e6ffaaf0822c3.woff2") format("woff2"), url("../fonts/quicksand-v9-latin-ext_latin-300-1e3d8bc47ae2fb6185266bdf8d180457.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* quicksand-500 - latin-ext_latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Quicksand Medium"), local("Quicksand-Medium"), url("../fonts/quicksand-v9-latin-ext_latin-500-3350e722b0201f3781649264558ce9e6.woff2") format("woff2"), url("../fonts/quicksand-v9-latin-ext_latin-500-5c0baec70fb460bb45c8c11eeed0d977.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* quicksand-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../fonts/quicksand-v9-latin-ext_latin-700-933bb785fa19fb494ee25718c1f5cb12.woff2") format("woff2"), url("../fonts/quicksand-v9-latin-ext_latin-700-99e912efa9f202c29c9e7512ca272de6.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* quicksand-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("../fonts/quicksand-v9-latin-ext_latin-regular-88b5a3d53db9c8cd748651b1f9a7350c.woff2") format("woff2"), url("../fonts/quicksand-v9-latin-ext_latin-regular-1e1b1924690d10c80f883f4a237bb3a9.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/*# sourceMappingURL=maps/theme-font.min.css.map */

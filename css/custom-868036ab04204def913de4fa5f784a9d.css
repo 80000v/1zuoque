@@ -1,0 +1,52 @@
+.nav-pills .nav-item {
+    margin-right: 0.5rem;
+}
+
+.nav-pills .nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-pills.nav-pills-sm .nav-item .nav-link {
+    font-size: 0.9rem;
+    padding: 0.35rem .8rem;
+}
+
+.site-header::before {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.footer.footer--with-decoration::before {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.clients-item img{
+	max-height: 50px;
+}
+
+input.error {
+	border: 1px solid #ed1c24;
+}
+
+.crumina-button:disabled {
+	background-color: gray !important;
+}
+
+.border-primary-themes {
+ border-color:var(--primary-accent-color) !important;
+}
+.border-red-themes {
+ border-color:var(--red-themes) !important;
+}
+.border-orange-themes {
+ border-color:var(--orange-themes) !important;
+}
+.border-yellow-themes {
+ border-color:var(--yellow-themes) !important;
+}
+.border-blue-themes {
+ border-color:var(--blue-themes) !important;
+}
